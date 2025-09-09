@@ -1,0 +1,54 @@
+# Ghostty Configuration
+# @see https://ghostty.zerebos.com for an easier way to configure Ghostty
+
+# Command to run when opening a new session
+command = tmux new-session -A -s ghostty
+
+# Transparency and Appearance
+# Sets background transparency (0.0 fully transparent, 1.0 opaque)
+background-opacity = 0.8
+# Enables blur for transparent background (KDE Plasma supported)
+background-blur = true
+
+# Adds 10-point horizontal padding
+window-padding-x = 0
+# Adds 10-point vertical padding
+window-padding-y = 0
+# Uses background color for padding area
+window-padding-color = background
+
+# Font and Text
+# Sets 0xProto as the monospaced font
+font-family = "0xProto Nerd Font Mono"
+# Sets font size to 9 points
+font-size = 9
+# Disables programming ligatures for cleaner code display
+font-feature = -calt
+
+# Theme options
+# Uses GitHub Dark theme from specified path
+theme = /snap/ghostty/current/share/ghostty/themes/GitHub Dark
+
+# Shell Integration
+# Auto-detects shell for integration (e.g., zsh, bash)
+shell-integration = detect
+# Enables cursor style, sudo wrapper, and title updates
+shell-integration-features = cursor,sudo,title
+
+
+# Clipboard
+# Allows reading from clipboard
+clipboard-read = allow
+# Allows writing to clipboard
+clipboard-write = allow
+# Auto-copies selected text to clipboard
+copy-on-select = true
+# Protects against pasting potentially unsafe text
+clipboard-paste-protection = true
+
+# Miscellaneous
+# Sets 32MB scrollback buffer (~10,000 lines)
+scrollback-limit = 33554432
+
+# GTK
+gtk-single-instance = true
