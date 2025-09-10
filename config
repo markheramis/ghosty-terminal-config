@@ -21,7 +21,7 @@ window-padding-color = background
 # Sets 0xProto as the monospaced font
 font-family = "0xProto Nerd Font Mono"
 # Sets font size to 9 points
-font-size = 9
+font-size = 10
 # Disables programming ligatures for cleaner code display
 font-feature = -calt
 
